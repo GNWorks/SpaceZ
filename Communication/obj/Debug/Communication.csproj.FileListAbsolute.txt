@@ -1,0 +1,5 @@
+C:\Users\nalla\source\repos\SpaceZProject\Communication\bin\Debug\Communication.dll
+C:\Users\nalla\source\repos\SpaceZProject\Communication\bin\Debug\Communication.pdb
+C:\Users\nalla\source\repos\SpaceZProject\Communication\obj\Debug\Communication.csproj.CoreCompileInputs.cache
+C:\Users\nalla\source\repos\SpaceZProject\Communication\obj\Debug\Communication.dll
+C:\Users\nalla\source\repos\SpaceZProject\Communication\obj\Debug\Communication.pdb

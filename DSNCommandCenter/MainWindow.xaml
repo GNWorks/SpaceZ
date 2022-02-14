@@ -1,0 +1,85 @@
+﻿<Window x:Class="DSNCommandCenter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DSNCommandCenter"
+        xmlns:fa5="http://schemas.fontawesome.com/icons/"
+        mc:Ignorable="d"
+        Title="SpaceZ" Height="650" Width="1200">
+    <Grid Background="#333238">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Name="Sidebar" Width="*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <!--Sidebar-->
+        <Grid Grid.Column="0" Name="Menu" Background="#333238">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="16*"/>
+            </Grid.RowDefinitions>
+
+            <Grid>
+                <!--<Image Margin="20,20,20,20" Source="./Assets/profile-icon-png-909.png" />-->
+
+            </Grid>
+
+            <!--Sidebar Items-->
+            <ListView Name="SidebarItems" ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectionChanged="ListViewMenu_SelectionChanged" BorderThickness="0" Background="#3b3c40" Grid.Row="1" Foreground="White" >
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="{x:Type ListViewItem}">
+                        <Style.Triggers>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter Property="Foreground" Value="White"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </ListView.ItemContainerStyle>
+
+                <ListViewItem x:Name="Home" Height="60">
+                    <StackPanel Orientation="Horizontal">
+                        <fa5:SvgAwesome Foreground="white" Margin="10,0,0,0" Width="20px" Icon="Solid_Home" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                        <TextBlock Text="Home" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20 10"/>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem x:Name="MissionControlSystem" Height="60">
+                    <StackPanel Orientation="Horizontal">
+                        <fa5:SvgAwesome Foreground="white" Margin="10,0,0,0" Width="20px" Icon="Solid_Keyboard" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                        <TextBlock Text="MissionControlSystem" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20 10"/>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem x:Name="CommunicationSystem" Height="60">
+                    <StackPanel Orientation="Horizontal">
+                        <fa5:SvgAwesome Foreground="white" Margin="10,0,0,0" Width="20px" Icon="Solid_SatelliteDish" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                        <TextBlock Text="CommunicationSystem" VerticalAlignment="Center"  Margin="20 10"/>
+                    </StackPanel>
+                </ListViewItem>
+            </ListView>
+
+        </Grid>
+
+        <!--The Content Layout-->
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition MaxHeight="70px" Height="*"/>
+                <RowDefinition Height="5*"/>
+            </Grid.RowDefinitions>
+
+            <!--TopBar-->
+            <Grid Grid.Row="0" Background="#333238">
+                <TextBlock HorizontalAlignment="Center" Foreground="White" VerticalAlignment="Center" FontSize="22">DSN Command Center</TextBlock>
+            </Grid>
+
+            <!--Main Content-->
+
+            <Border Grid.Row="1" Background="White">
+                <Grid Name="ContentMain" Grid.Row="1" Margin="20,20,20,0" Background="White">
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" FontWeight="Bold" Margin="317,152,328,356.5"> Welcome to DSN Command Center..!</TextBlock>
+                </Grid>
+            </Border>
+        </Grid>
+    </Grid>
+</Window>

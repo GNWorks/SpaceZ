@@ -1,0 +1,10 @@
+C:\Users\nalla\source\repos\SpaceZProject\CommunicationServer\bin\Debug\CommunicationServer.exe.config
+C:\Users\nalla\source\repos\SpaceZProject\CommunicationServer\bin\Debug\CommunicationServer.exe
+C:\Users\nalla\source\repos\SpaceZProject\CommunicationServer\bin\Debug\CommunicationServer.pdb
+C:\Users\nalla\source\repos\SpaceZProject\CommunicationServer\bin\Debug\Communication.dll
+C:\Users\nalla\source\repos\SpaceZProject\CommunicationServer\bin\Debug\Communication.pdb
+C:\Users\nalla\source\repos\SpaceZProject\CommunicationServer\obj\Debug\CommunicationServer.csproj.AssemblyReference.cache
+C:\Users\nalla\source\repos\SpaceZProject\CommunicationServer\obj\Debug\CommunicationServer.csproj.CoreCompileInputs.cache
+C:\Users\nalla\source\repos\SpaceZProject\CommunicationServer\obj\Debug\CommunicationServer.csproj.CopyComplete
+C:\Users\nalla\source\repos\SpaceZProject\CommunicationServer\obj\Debug\CommunicationServer.exe
+C:\Users\nalla\source\repos\SpaceZProject\CommunicationServer\obj\Debug\CommunicationServer.pdb
